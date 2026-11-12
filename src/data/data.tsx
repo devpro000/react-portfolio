@@ -14,18 +14,18 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import porfolioImage1 from '../images/portfolio/portfolio-1.png';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import porfolioImage3 from '../images/portfolio/portfolio-3.png';
+import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+import porfolioImage6 from '../images/portfolio/portfolio-6.png';
+import porfolioImage7 from '../images/portfolio/portfolio-7.png';
+import porfolioImage8 from '../images/portfolio/portfolio-8.png';
+import porfolioImage9 from '../images/portfolio/portfolio-12.png';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import porfolioImage11 from '../images/portfolio/portfolio-11.png';
+import profilepic from '../images/profilepic.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -39,13 +39,14 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
+import FacebookIcon from '../components/Icon/FacebookIcon';
 
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Uno Kaito | Full Stack Software Engineer',
+  description: "Uno Kaito's personal website and portfolio.",
 };
 
 /**
@@ -69,24 +70,23 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Uno Kaito`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+    <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        Results-driven <strong className="text-stone-100">Full Stack Software Engineer</strong> with 6+ years of international experience developing scalable web applications, native iOS applications, and AI-powered digital solutions across Japan, Europe, and Africa. 
+        Proven ability to deliver end-to-end software products, optimize system performance, and translate complex business requirements into reliable technology solutions.
+        Proficient in 15+ modern technologies, including React.js, Next.js, TypeScript, Node.js, Python, Swift, and SwiftUI, with expertise in backend architecture, RESTful APIs, microservices, cloud infrastructure, and AI integration using LLMs.
+        Passionate about building innovative digital products that drive business efficiency, customer engagement, and measurable growth.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, I play computer games, play and record music on my guitar.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/assets/resume.docx',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +104,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: ` I'm a software engineer who genuinely enjoys creating things with technology. I love taking an idea, figuring out how to make it work, and turning it into something people can actually use. I'm always curious, enjoy learning new things, and find the most satisfaction in solving problems and bringing creative ideas to life.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
+    {label: 'Location', text: 'Brazzaville, Republic of Congo', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Nationality', text: 'Japanese / Asian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Computer game, Guitar', Icon: SparklesIcon},
+    {label: 'Study', text: 'Osaka University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Qukuri Inc.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -125,50 +123,50 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English',
+        name: 'Japanese',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'English',
+        level: 8,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'French',
+        level: 2,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'AI Engineering',
     skills: [
       {
-        name: 'React',
+        name: 'AI Chatbot',
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'RAG System',
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'AI Agent',
         level: 6,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Web Development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'RESTful API, FAST API, GraphQL',
+        level: 10,
+      },
+      {
+        name: 'PostgreSQL, MySQL, MongoDB, Redis',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
+        name: 'React.js, Next.js, TypeScript, Node.js, Django',
+        level: 10,
       },
     ],
   },
@@ -176,16 +174,16 @@ export const skills: SkillGroup[] = [
     name: 'Mobile development',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'Android, iOS, Kotlin, Swift, SwiftUI, UIKit',
+        level: 10,
+      },
+      {
+        name: 'React Native, Expo',
+        level: 8,
       },
       {
         name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
+        level: 10,
       },
     ],
   },
@@ -196,69 +194,69 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'AI ChatBot',
+    description: 'OpenAI-powered chatbot that provides intelligent responses to user queries, enhancing customer support and engagement.',
+    url: '/',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Trizy Shopping',
+    description: 'e-commerce platform that offers a seamless shopping experience with personalized recommendations, secure payments, and fast delivery.',
+    url: '',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'emiTek AI',
+    description: 'AI Automation platform that leverages machine learning algorithms to automate repetitive tasks, optimize workflows, and improve operational efficiency.',
+    url: '',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Babble',
+    description: 'As a V-Meeting app, Babble enables real-time communication and collaboration through video conferencing, screen sharing, and chat features, enhancing remote team productivity.',
+    url: '',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Food-Delivery App',
+    description: 'A mobile application for ordering and delivering food from local restaurants, featuring real-time tracking and seamless payment processing.',
+    url: '',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'RAG System',
+    description: 'A cutting-edge retrieval-augmented generation system that combines the power of large language models with efficient information retrieval techniques.',
+    url: '',
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'e-Commerce Platform',
+    description: 'A comprehensive e-commerce solution that provides a seamless shopping experience with personalized recommendations, secure payments, and fast delivery.',
+    url: '',
     image: porfolioImage7,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Individual Task',
+    description: '',
+    url: '',
     image: porfolioImage8,
   },
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Novsed Player',
+    description: 'A media player application that supports various audio and video formats, offering a user-friendly interface and advanced playback features.',
+    url: '',
     image: porfolioImage9,
   },
   {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Delivering-Eat',
+    description: 'A food delivery application that connects customers with local restaurants, offering real-time tracking and seamless payment processing.',
+    url: '',
     image: porfolioImage10,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Navigation Service Platform',
+    description: 'A comprehensive navigation service that provides accurate location-based information and route planning capabilities.',
+    url: '',
     image: porfolioImage11,
   },
 ];
@@ -268,39 +266,64 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'April 2014',
+    location: 'Osaka',
+    title: 'Osaka University',
+    content: <p>Bachelor of Technology - BTech</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'Jan 2025 - Sep 2026',
+    location: 'emiTek',
+    title: 'Senior Full-Stack & AI Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        •	Lead the design, architecture, development, and deployment of scalable web applications, native iOS applications, and AI-powered digital products.<br/>
+        •	Develop native iOS applications using Swift, SwiftUI, UIKit, and modern Apple frameworks, implementing clean architecture, reusable components, and optimized application performance.<br/>
+        •	Design and implement scalable backend services using Node.js, NestJS, Python, and FastAPI to support mobile applications, web platforms, and AI-driven solutions.<br/>
+        •	Architect and maintain RESTful APIs, ensuring seamless communication between frontend applications, backend services, databases, and external platforms.<br/>
+        •	Integrate Large Language Models (LLMs) and AI APIs to develop intelligent assistants, conversational interfaces, automated workflows, and AI-powered business functionalities.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'Nov 2022 - Dec 2024',
+    location: 'VisualCron',
+    title: 'Full-Stack Software Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        •	Designed, developed, and maintained scalable enterprise web applications using React.js, Next.js, TypeScript, Node.js, and Python.<br/>
+        •	Developed and maintained RESTful APIs and backend services for business logic, data processing, third-party integrations, and distributed application communication.<br/>
+        •	Built responsive frontend architectures using reusable components, state management, and optimized rendering techniques to deliver consistent user experiences.<br/>
+        •	Designed and managed relational and NoSQL database architectures using PostgreSQL, MongoDB, and Redis, focusing on data integrity, query performance, and scalability.<br/>
+        •	Integrated third-party APIs, payment gateways, authentication providers, and enterprise platforms to extend application functionality.
+      </p>
+    ),
+  },
+  {
+    date: 'Mar 2020 - Sep 2022',
+    location: 'Altex',
+    title: 'Full-Stack Software Engineer',
+    content: (
+      <p>
+        •	Developed and maintained full-stack web applications using React.js, Next.js, TypeScript, Node.js, and Express.js to support business operations and customer-facing platforms.<br/>
+        •	Designed and implemented RESTful APIs to support application features, business workflows, user management, and third-party integrations.<br/>
+        •	Developed backend business logic, data validation, authentication services, and application workflows using Node.js and Express.js.<br/>
+        •	Designed database schemas, established data relationships, and optimized queries using PostgreSQL, MySQL, and MongoDB.
+      </p>
+    ),
+  },
+  {
+    date: 'Mar 2020 - Sep 2022',
+    location: 'Qukuri Inc',
+    title: 'Junior Web Developer',
+    content: (
+      <p>
+        •	Assisted in developing and maintaining web applications using JavaScript, HTML5, CSS3, React.js, and Node.js.<br/>
+        •	Developed responsive user interfaces based on technical specifications and design requirements.<br/>
+        •	Supported backend development by implementing API endpoints and integrating frontend components with backend services.
       </p>
     ),
   },
@@ -313,18 +336,18 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'Alex Morgan',
+      text: 'Working with emiTek was a great experience. The AI chatbot they developed helped us automate customer interactions, provide instant responses, and improve our overall workflow. The solution was smart, efficient, and easy to use',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'Sophia Williams',
+      text: 'Altex did an excellent job bringing our mobile app idea to life. The iOS application has a clean design, smooth performance, and an intuitive user experience. Communication was professional throughout the development process.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      name: 'Daniel Carter',
+      text: 'I highly recommend Qukuri Inc for web development. They created a modern, responsive, and professional website that perfectly represents our brand. The attention to detail, technical skills, and commitment to quality were impressive.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
@@ -340,23 +363,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'dev.uniway911@gmail.com',
+      href: 'mailto:dev.uniway911@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
+      text: 'Brazzaville, Republic of Congo',
       href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.Twitter,
+      text: '@unokaito911',
+      href: 'https://twitter.com/unokaito911',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'devpro000',
+      href: 'https://github.com/devpro000',
     },
   ],
 };
@@ -365,9 +388,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/devpro000'},
+  // {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
+  // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
+  {label: 'Facebook', Icon: FacebookIcon, href: 'https://facebook.com/unokaito911'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://x.com/unokaito911'},
 ];
