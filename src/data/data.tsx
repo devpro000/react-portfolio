@@ -8,23 +8,21 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
+import FacebookIcon from '../components/Icon/FacebookIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.png';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.png';
 import porfolioImage4 from '../images/portfolio/portfolio-4.png';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.png';
 import porfolioImage7 from '../images/portfolio/portfolio-7.png';
 import porfolioImage8 from '../images/portfolio/portfolio-8.png';
-import porfolioImage9 from '../images/portfolio/portfolio-12.png';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.png';
+import porfolioImage9 from '../images/portfolio/portfolio-12.png';
 import profilepic from '../images/profilepic.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -39,7 +37,6 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
-import FacebookIcon from '../components/Icon/FacebookIcon';
 
 /**
  * Page meta data
@@ -73,11 +70,15 @@ export const heroData: Hero = {
   name: `Uno Kaito`,
   description: (
     <>
-    <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Results-driven <strong className="text-stone-100">Full Stack Software Engineer</strong> with 6+ years of international experience developing scalable web applications, native iOS applications, and AI-powered digital solutions across Japan, Europe, and Africa. 
-        Proven ability to deliver end-to-end software products, optimize system performance, and translate complex business requirements into reliable technology solutions.
-        Proficient in 15+ modern technologies, including React.js, Next.js, TypeScript, Node.js, Python, Swift, and SwiftUI, with expertise in backend architecture, RESTful APIs, microservices, cloud infrastructure, and AI integration using LLMs.
-        Passionate about building innovative digital products that drive business efficiency, customer engagement, and measurable growth.
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        Results-driven <strong className="text-stone-100">Full Stack Software Engineer</strong> with 6+ years of
+        international experience developing scalable web applications, native iOS applications, and AI-powered digital
+        solutions across Japan, Europe, and Africa. Proven ability to deliver end-to-end software products, optimize
+        system performance, and translate complex business requirements into reliable technology solutions. Proficient
+        in 15+ modern technologies, including React.js, Next.js, TypeScript, Node.js, Python, Swift, and SwiftUI, with
+        expertise in backend architecture, RESTful APIs, microservices, cloud infrastructure, and AI integration using
+        LLMs. Passionate about building innovative digital products that drive business efficiency, customer engagement,
+        and measurable growth.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, I play computer games, play and record music on my guitar.
@@ -195,43 +196,50 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'AI ChatBot',
-    description: 'OpenAI-powered chatbot that provides intelligent responses to user queries, enhancing customer support and engagement.',
+    description:
+      'OpenAI-powered chatbot that provides intelligent responses to user queries, enhancing customer support and engagement.',
     url: '/',
     image: porfolioImage1,
   },
   {
     title: 'Trizy Shopping',
-    description: 'e-commerce platform that offers a seamless shopping experience with personalized recommendations, secure payments, and fast delivery.',
+    description:
+      'e-commerce platform that offers a seamless shopping experience with personalized recommendations, secure payments, and fast delivery.',
     url: '',
     image: porfolioImage2,
   },
   {
     title: 'emiTek AI',
-    description: 'AI Automation platform that leverages machine learning algorithms to automate repetitive tasks, optimize workflows, and improve operational efficiency.',
+    description:
+      'AI Automation platform that leverages machine learning algorithms to automate repetitive tasks, optimize workflows, and improve operational efficiency.',
     url: '',
     image: porfolioImage3,
   },
   {
     title: 'Babble',
-    description: 'As a V-Meeting app, Babble enables real-time communication and collaboration through video conferencing, screen sharing, and chat features, enhancing remote team productivity.',
+    description:
+      'As a V-Meeting app, Babble enables real-time communication and collaboration through video conferencing, screen sharing, and chat features, enhancing remote team productivity.',
     url: '',
     image: porfolioImage4,
   },
   {
     title: 'Food-Delivery App',
-    description: 'A mobile application for ordering and delivering food from local restaurants, featuring real-time tracking and seamless payment processing.',
+    description:
+      'A mobile application for ordering and delivering food from local restaurants, featuring real-time tracking and seamless payment processing.',
     url: '',
     image: porfolioImage5,
   },
   {
     title: 'RAG System',
-    description: 'A cutting-edge retrieval-augmented generation system that combines the power of large language models with efficient information retrieval techniques.',
+    description:
+      'A cutting-edge retrieval-augmented generation system that combines the power of large language models with efficient information retrieval techniques.',
     url: '',
     image: porfolioImage6,
   },
   {
     title: 'e-Commerce Platform',
-    description: 'A comprehensive e-commerce solution that provides a seamless shopping experience with personalized recommendations, secure payments, and fast delivery.',
+    description:
+      'A comprehensive e-commerce solution that provides a seamless shopping experience with personalized recommendations, secure payments, and fast delivery.',
     url: '',
     image: porfolioImage7,
   },
@@ -243,19 +251,22 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Novsed Player',
-    description: 'A media player application that supports various audio and video formats, offering a user-friendly interface and advanced playback features.',
+    description:
+      'A media player application that supports various audio and video formats, offering a user-friendly interface and advanced playback features.',
     url: '',
     image: porfolioImage9,
   },
   {
     title: 'Delivering-Eat',
-    description: 'A food delivery application that connects customers with local restaurants, offering real-time tracking and seamless payment processing.',
+    description:
+      'A food delivery application that connects customers with local restaurants, offering real-time tracking and seamless payment processing.',
     url: '',
     image: porfolioImage10,
   },
   {
     title: 'Navigation Service Platform',
-    description: 'A comprehensive navigation service that provides accurate location-based information and route planning capabilities.',
+    description:
+      'A comprehensive navigation service that provides accurate location-based information and route planning capabilities.',
     url: '',
     image: porfolioImage11,
   },
@@ -280,11 +291,19 @@ export const experience: TimelineItem[] = [
     title: 'Senior Full-Stack & AI Engineer',
     content: (
       <p>
-        •	Lead the design, architecture, development, and deployment of scalable web applications, native iOS applications, and AI-powered digital products.<br/>
-        •	Develop native iOS applications using Swift, SwiftUI, UIKit, and modern Apple frameworks, implementing clean architecture, reusable components, and optimized application performance.<br/>
-        •	Design and implement scalable backend services using Node.js, NestJS, Python, and FastAPI to support mobile applications, web platforms, and AI-driven solutions.<br/>
-        •	Architect and maintain RESTful APIs, ensuring seamless communication between frontend applications, backend services, databases, and external platforms.<br/>
-        •	Integrate Large Language Models (LLMs) and AI APIs to develop intelligent assistants, conversational interfaces, automated workflows, and AI-powered business functionalities.
+        • Lead the design, architecture, development, and deployment of scalable web applications, native iOS
+        applications, and AI-powered digital products.
+        <br />
+        • Develop native iOS applications using Swift, SwiftUI, UIKit, and modern Apple frameworks, implementing clean
+        architecture, reusable components, and optimized application performance.
+        <br />
+        • Design and implement scalable backend services using Node.js, NestJS, Python, and FastAPI to support mobile
+        applications, web platforms, and AI-driven solutions.
+        <br />
+        • Architect and maintain RESTful APIs, ensuring seamless communication between frontend applications, backend
+        services, databases, and external platforms.
+        <br />• Integrate Large Language Models (LLMs) and AI APIs to develop intelligent assistants, conversational
+        interfaces, automated workflows, and AI-powered business functionalities.
       </p>
     ),
   },
@@ -294,11 +313,19 @@ export const experience: TimelineItem[] = [
     title: 'Full-Stack Software Engineer',
     content: (
       <p>
-        •	Designed, developed, and maintained scalable enterprise web applications using React.js, Next.js, TypeScript, Node.js, and Python.<br/>
-        •	Developed and maintained RESTful APIs and backend services for business logic, data processing, third-party integrations, and distributed application communication.<br/>
-        •	Built responsive frontend architectures using reusable components, state management, and optimized rendering techniques to deliver consistent user experiences.<br/>
-        •	Designed and managed relational and NoSQL database architectures using PostgreSQL, MongoDB, and Redis, focusing on data integrity, query performance, and scalability.<br/>
-        •	Integrated third-party APIs, payment gateways, authentication providers, and enterprise platforms to extend application functionality.
+        • Designed, developed, and maintained scalable enterprise web applications using React.js, Next.js, TypeScript,
+        Node.js, and Python.
+        <br />
+        • Developed and maintained RESTful APIs and backend services for business logic, data processing, third-party
+        integrations, and distributed application communication.
+        <br />
+        • Built responsive frontend architectures using reusable components, state management, and optimized rendering
+        techniques to deliver consistent user experiences.
+        <br />
+        • Designed and managed relational and NoSQL database architectures using PostgreSQL, MongoDB, and Redis,
+        focusing on data integrity, query performance, and scalability.
+        <br />• Integrated third-party APIs, payment gateways, authentication providers, and enterprise platforms to
+        extend application functionality.
       </p>
     ),
   },
@@ -308,10 +335,16 @@ export const experience: TimelineItem[] = [
     title: 'Full-Stack Software Engineer',
     content: (
       <p>
-        •	Developed and maintained full-stack web applications using React.js, Next.js, TypeScript, Node.js, and Express.js to support business operations and customer-facing platforms.<br/>
-        •	Designed and implemented RESTful APIs to support application features, business workflows, user management, and third-party integrations.<br/>
-        •	Developed backend business logic, data validation, authentication services, and application workflows using Node.js and Express.js.<br/>
-        •	Designed database schemas, established data relationships, and optimized queries using PostgreSQL, MySQL, and MongoDB.
+        • Developed and maintained full-stack web applications using React.js, Next.js, TypeScript, Node.js, and
+        Express.js to support business operations and customer-facing platforms.
+        <br />
+        • Designed and implemented RESTful APIs to support application features, business workflows, user management,
+        and third-party integrations.
+        <br />
+        • Developed backend business logic, data validation, authentication services, and application workflows using
+        Node.js and Express.js.
+        <br />• Designed database schemas, established data relationships, and optimized queries using PostgreSQL,
+        MySQL, and MongoDB.
       </p>
     ),
   },
@@ -321,9 +354,11 @@ export const experience: TimelineItem[] = [
     title: 'Junior Web Developer',
     content: (
       <p>
-        •	Assisted in developing and maintaining web applications using JavaScript, HTML5, CSS3, React.js, and Node.js.<br/>
-        •	Developed responsive user interfaces based on technical specifications and design requirements.<br/>
-        •	Supported backend development by implementing API endpoints and integrating frontend components with backend services.
+        • Assisted in developing and maintaining web applications using JavaScript, HTML5, CSS3, React.js, and Node.js.
+        <br />
+        • Developed responsive user interfaces based on technical specifications and design requirements.
+        <br />• Supported backend development by implementing API endpoints and integrating frontend components with
+        backend services.
       </p>
     ),
   },
